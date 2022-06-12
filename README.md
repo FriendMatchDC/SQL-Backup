@@ -32,3 +32,6 @@ Danach erscheint eine Datei, in dieser folgenden Cronjob anlegen:
 ```
 
 Nun wir die komplette MySQL-Datenbank täglich um ``3:00 UTC+2`` in ``/backup/mysql/`` gesichert!
+
+
+**WICHTIG:** Bitte das SQL Account Passwort noch in der Shell-Datei angeben!
