@@ -13,3 +13,5 @@ for db in $databases; do
   FILENAME="${TIMESTAMP}_${db}.sql.gz"
   $MYSQLDUMP --force --opt --user=$MYSQL_USER -p$MYSQL_PASSWORD --databases $db | gzip > "$BACKUP_DIR/$FILENAME"
 done
+
+find /var/log -name "*.gz" -type f -mtime +90 -delete 
